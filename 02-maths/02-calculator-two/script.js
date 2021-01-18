@@ -11,8 +11,26 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
+    let performOperation = function(operator) {
+        let num1 = parseInt(document.getElementById("op-one").value,);
+        let num2 = parseInt(document.getElementById("op-two").value,);
+        let total;
 
-    var performOperation = function(operation) {
+        switch (operator){
+            case "addition":
+                total = num1 + num2;
+                break;
+            case "substraction":
+                total = num1 - num2;
+                break;
+            case "multiplication":
+                total = num1 * num2;
+                break;
+            case "division":
+                total= num1 / num2;
+                break;
+        }
+        alert("Total: " + total);
         // perform the operation
     };
 

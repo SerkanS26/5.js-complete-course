@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function getConfirm() {
+    let userAge = prompt("What is your age ?:");
+    let userGender = prompt("What is your Gender ?:");
+    let userTown = prompt("In what town do you live ?:");
 
-    // your code here
-
+    let result = confirm ("You are " + userAge + " years old\n" + " you are a " + userGender + "\nyou live in " + userTown + "\nIf this correct press OK!");
+    if (result === false) {
+        getConfirm();
+    }
 })();
