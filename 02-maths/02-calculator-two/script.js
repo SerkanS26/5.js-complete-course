@@ -11,12 +11,12 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
-    let performOperation = function(operator) {
+    let performOperation = function(operation) {
         let num1 = parseInt(document.getElementById("op-one").value,);
         let num2 = parseInt(document.getElementById("op-two").value,);
         let total;
 
-        switch (operator){
+        switch (operation){
             case "addition":
                 total = num1 + num2;
                 break;
