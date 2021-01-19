@@ -9,9 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function evenSquare() {
 
     document.getElementById("run").addEventListener("click", function() {
+        for(let i=1; i<21; i++){
+            let square = Math.pow(i, 2);
+            alert("even square of " + i + " = " + square);
+        }
+
+
+
+
 
         // your code here
 
