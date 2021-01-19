@@ -11,6 +11,13 @@
 
 (function() {
 
+    document.getElementById("run").addEventListener("click", function() {
+        let colors = ["red", "blue", "green", "yellow", "black", "brown", "orange"]
+        let randomColor = colors[Math.floor(Math.random() * colors.length)]
+        document.body.style.backgroundColor = randomColor;
+        // your code here
+    });
+
     // your code here
 
 })();
