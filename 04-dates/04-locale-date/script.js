@@ -15,4 +15,16 @@
 
     // your code here
 
+    const target = document.getElementById("target");
+    const date = new Date();
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+    const today = date.toLocaleTimeString("en-GB", options);
+
+    target.innerHTML = today;
+
 })();
