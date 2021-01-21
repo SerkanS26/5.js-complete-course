@@ -91,4 +91,9 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function (){
+        let searchPerson = people.find(search => search.firstname === "Jean" && search.lastname === "Dupont");
+        console.log(searchPerson.email);
+
+    })
 })();

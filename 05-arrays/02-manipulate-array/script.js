@@ -25,5 +25,9 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function (){
+        fruits.splice(0,1,"banaan");
+        fruits.splice(-1,1, "kiwi");
+        console.log(fruits);
+    })
 })();
