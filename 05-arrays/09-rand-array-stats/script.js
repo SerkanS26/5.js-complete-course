@@ -21,6 +21,10 @@
             sumArray+= array[i];
         }
 
+        for (let i = 1; i <=10; i++) {
+            document.getElementById("n-" + i).innerHTML = array[i-1];
+        }
+/*
          document.getElementById("n-1").innerHTML = array[0];
          document.getElementById("n-2").innerHTML = array[1];
          document.getElementById("n-3").innerHTML = array[2];
@@ -31,7 +35,7 @@
          document.getElementById("n-8").innerHTML = array[7];
          document.getElementById("n-9").innerHTML = array[8];
          document.getElementById("n-10").innerHTML = array[9];
-
+*/
 
          document.getElementById("min").innerHTML = Math.min(...array);
          document.getElementById("max").innerHTML = Math.max(...array);
