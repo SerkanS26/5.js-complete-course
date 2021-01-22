@@ -92,7 +92,7 @@
     // your code here
 
     document.getElementById("run").addEventListener("click", function (){
-        let searchPerson = people.find(search => search.firstname === "Jean" && search.lastname === "Dupont");
+        let searchPerson = people.find(person => person.firstname === "Jean" && person.lastname === "Dupont");
         console.log(searchPerson.email);
 
     })
