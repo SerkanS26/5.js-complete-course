@@ -29,5 +29,11 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        let uniqueList = [...new Set(fruits)] ;
+        console.log(uniqueList);
+
+    });
+
 
 })();
