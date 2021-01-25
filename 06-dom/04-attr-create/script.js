@@ -13,4 +13,13 @@
 
     // your code here
 
+    let myElement = document.createElement("img");
+    myElement.setAttribute("src", "http://www.randomkittengenerator.com/cats/rotator.php");
+
+    let target = document.getElementById("target");
+    target.appendChild(myElement);
+
+    document.getElementById("source").remove();
+
+
 })();

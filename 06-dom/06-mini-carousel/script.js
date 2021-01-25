@@ -21,4 +21,15 @@
 
     // your code here
 
+    let i = 0;
+    document.querySelector("#next").addEventListener("click",function (){
+        if (i >= gallery.length -1){
+            i=0;
+        }else{
+            i ++;
+        }
+        document.getElementsByTagName("img")[0].src = gallery[i];
+    });
+
+
 })();

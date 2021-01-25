@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+    let target = document.querySelectorAll("#target");
+    let table = document.createElement("table");
+    let tBody = document.createElement("tbody");
+
+    target[0].appendChild(table);
+    table.appendChild(tBody);
+
+    for (let i = 0; i <10 ; i++) {
+        let tr = document.createElement("tr");
+        tBody.appendChild(tr);
+
+        for (let j = 0; j <10 ; j++) {
+            let td = document.createElement("td");
+            tr.appendChild(td).innerText = "Test";
+        }
+    }
 
 })();

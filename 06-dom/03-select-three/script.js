@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+    let target = document.getElementsByClassName("target");
+
+    for (let i = 0; i <=5; i++) {
+        let changeText = target[i].innerHTML = "Owned";
+    }
+
+    /*
+    let changeText2 = target[1].innerHTML = "Owned";
+    let changeTex3 = target[2].innerHTML = "Owned";
+    let changeText4 = target[3].innerHTML = "Owned";
+    let changeText5= target[5].innerHTML = "Owned";
+
+     */
 
 })();
