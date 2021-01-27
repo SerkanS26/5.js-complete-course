@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+    document.getElementById("pass-one").addEventListener("input", function (){
+        let passOne = document.getElementById("pass-one");
+        let counter = document.getElementById("counter");
+
+        let passInput = passOne.value.substring(0,10);
+        let passCount = passInput.length;
+
+        if(passCount > 9){
+            passOne.value = passInput;
+        }
+
+        counter.innerText = passCount + "/10";
+    })
+
+
+
 
 })();

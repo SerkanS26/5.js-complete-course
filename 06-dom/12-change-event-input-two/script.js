@@ -13,4 +13,21 @@
 
     // your code here
 
+    document.getElementById("pass-one").addEventListener("input", function (){
+        let password = document.getElementById("pass-one");
+        let passInput = password.value.substring(0,8);
+        let passwordLength = passInput.length;
+
+        let regex = /.*\d.*\d.*/g;
+        let numbers = passInput.match(regex);
+
+        if(passwordLength > 7 && numbers != null){
+            password.value = passInput;
+            document.getElementById("validity").innerHTML = "Ok";
+        }else{
+            document.getElementById("validity").innerHTML = "Not Ok"
+        }
+
+    })
+
 })();

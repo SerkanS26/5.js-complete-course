@@ -12,5 +12,12 @@
 (function() {
 
     // your code here
+    let output = document.querySelector("#target");
+    let slider = document.querySelector("#slider");
+
+
+    slider.oninput = function (){
+        output.innerHTML = "0" + this.value;
+    }
 
 })();

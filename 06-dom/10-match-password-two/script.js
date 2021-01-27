@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        let passOne = document.getElementById("pass-one").value;
+        let passTwo = document.getElementById("pass-two").value;
+
+        if (passOne !== passTwo){
+            document.getElementById("pass-one").classList.add("error");
+            document.getElementById("pass-two").classList.add("error");
+        }else{
+            alert("Password Correct !");
+        }
+    })
 
 })();

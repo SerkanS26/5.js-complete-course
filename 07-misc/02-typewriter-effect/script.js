@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+   let target =  document.querySelector("#target");
+   let text = target.textContent;
+   target.textContent = "";
+    console.log(text);
+
+   let i = 0;
+
+   function animate(){
+       if ( i < text.length){
+           target.innerHTML += text.charAt(i)
+           i++
+           setTimeout(animate, 150);
+       }
+   }
+    animate();
+
 
 })();
