@@ -48,30 +48,6 @@
 
         }
 
-
-
-        // text.innerHTML+= "<span id='char' + i>" + splitText[i] + "</span>";
     }
-
-/*
-    let char = 0;
-    let timer = setInterval(onTick, 50);
-
-    function onTick(){
-        let span = text.querySelectorAll("span")[char];
-        span.classList.add("fade");
-        char++;
-    }
-
-   let classFade = document.getElementsByClassName("fade");
-
-
-
-
-    function complete(){
-        clearInterval(timer);
-        timer = null;
-    }
-*/
 
 })();
