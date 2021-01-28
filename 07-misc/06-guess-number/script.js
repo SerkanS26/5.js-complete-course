@@ -14,18 +14,21 @@
     // your code here
     let number = Math.floor(Math.random() *100 + 1)
     let userInput;
+    let userInputCounter = 0;
 
     console.log(number);
 
     while (userInput !== number){
         userInput = prompt(" Guess the number")
+        userInputCounter++
         if(userInput > number){
             alert("Lower !")
-
         }else if (userInput < number){
             alert("Higher !")
+
         }else{
-            alert("That's it!")
+            alert("That's it! " + "Total Guess: " + userInputCounter)
+            break;
         }
     }
 
