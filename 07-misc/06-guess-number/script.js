@@ -12,5 +12,22 @@
 (function() {
 
     // your code here
+    let number = Math.floor(Math.random() *100 + 1)
+    let userInput;
+
+    console.log(number);
+
+    while (userInput !== number){
+        userInput = prompt(" Guess the number")
+        if(userInput > number){
+            alert("Lower !")
+
+        }else if (userInput < number){
+            alert("Higher !")
+        }else{
+            alert("That's it!")
+        }
+    }
+
 
 })();
