@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", ()=>{
+        window.lib.getPersons().then((peoples) => {
+            console.table(peoples);
+        });
+    })
 })();

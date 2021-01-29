@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click",function (){
+       window.lib.getPosts().then(async (articles) =>{
+           console.table(await articles);
+       })
+    })
 })();
